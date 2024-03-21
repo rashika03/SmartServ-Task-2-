@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smartserve || Task 2 ||</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="step-row">
+        <div class="step">
+            <div>Step 1: </div>
+            <div>
+                <input type="file" name="" id="filetoupload">
+                <p>Supported File Type(s): .CSV,.JSON</p>
+            </div>
+        </div>
+        <div class="step">
+            <div>Step 2: </div>
+            <div>
+                <p>Specify Format</p>
+                <div>
+                    <label>File Type : </label>
+                    <select class="arrows special">
+                        <option value="json">csv</option>
+                        <option value="csv">CSV</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Character Encoding : </label>
+                    <select class="arrows special">
+                        <option value="utf8">UTF-8</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Delimeter : </label>
+                    <select class="arrows special">
+                        <option value="comma">comma</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Has Header : </label>
+                    <input type="checkbox" name="" id="">
+                </div>
+            </div>
+        </div>    
+    </div>
+    <div class="step-row1">
+
+
+        <div>
+            
+            <label for="availableFields">Available Fields:</label><br>
+            <select name="availableFields" id="availableFields" multiple>
+                <!-- Options for Available Fields go here -->
+                <option value="field1">Product Id</option>
+                <option value="field2">Subcategory</option>
+                <option value="field3">Title</option>
+                <option value="field4">Price</option>
+                <option value="field5">Popularity</option>
+                <option value="field6">Description</option>
+                <option value="field7">Rating</option>
+                <option value="field8">UTM Source</option>
+                <option value="field9">UTM Medium</option>
+            </select>
+        </div>
+        
+        <div>
+            <button type="button" onclick="addFields()"> >></button>
+            <br><br>
+            <button type="button" onclick="removeFields()"> <<</button>
+        </div>
+        
+        <div>
+            <label for="displayedFields">Fields to be Displayed:</label><br>
+            <select name="displayedFields" id="displayedFields" multiple>
+                <!-- Options for Displayed Fields go here -->
+            </select>
+        </div>
+        
+    </div>
+    <div>
+        <input type="button" value="Next" onclick="myRead();">
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
